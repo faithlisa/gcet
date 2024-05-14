@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    /* CSS Scale Transformation for Entire Page for better UI/UX */
+    transform-origin: top left;
+    transform: scale(0.75); /* Scale down the entire page to 75% */
+    width: 133.3333%;
+    height: 133.3333%;
+}
+
+header,
+footer {
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+header input,
+.toolbar select,
+.toolbar input[type="range"],
+.toolbar button {
+    padding: 10px;
+    margin: 5px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e8e8e8;
+    padding: 10px;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap; /* Allows the map and details to wrap */
+}
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map {
+    flex: 2;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.description,
+.line-chart {
+    flex: 1;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+}
+
+/* ADDITIONAL STYLES SPECIFIC TO THE MAP AND LINE CHART */
+.line-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Stacks flex items vertically on smaller screens */
+    }
+
+    .map,
+    .details {
+        flex-basis: 100%; /* Each takes full width of the screen */
+        max-width: 100%; /* Adjusts maximum width to 100% */
+    }
+}
