@@ -1,0 +1,8 @@
+{
+    "name": "Global CO2 Emissions from Transport (GCET)",
+    "extensions": [
+      "ritwickdey.liveserver"
+    ],
+    "postCreateCommand": "code-server --install-extension ritwickdey.liveserver && code -r . -g index.html && code -r . && code-server"
+  }
+  
