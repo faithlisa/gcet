@@ -87,7 +87,7 @@ def add_country_codes(csv_file_path, output_file_path):
 
 
 # Create the filtered CSV file
-csv_file_path = "co2-emissions-transport.csv"
+csv_file_path = "archive/co2-emissions-transport.csv"
 output_file_path = "source.csv"
 # add_country_codes(csv_file_path, output_file_path)
 # print("Filtered source.csv file created.")
