@@ -1,0 +1,12 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Start Live Server",
+        "type": "shell",
+        "command": "code-server --install-extension ritwickdey.liveserver && code -r ../index.html && code -r . && code-server",
+        "problemMatcher": []
+      }
+    ]
+  }
+  
